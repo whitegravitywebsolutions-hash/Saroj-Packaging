@@ -172,7 +172,8 @@ input, select, textarea {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -182,6 +183,7 @@ input, select, textarea {
   position: relative;
   padding: 0.4rem 0.2rem;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -1330,6 +1332,7 @@ input, select, textarea {
 }
 
 /* ==========================================================================
+/* ==========================================================================
    Mobile Nav Backdrop & Drawer Actions
    ========================================================================== */
 .mobile-drawer-actions {
@@ -1357,6 +1360,64 @@ input, select, textarea {
 
 .calc-row-2col {
   grid-template-columns: 1fr 1fr;
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Custom Interactive Range Progress Bar Slider */
+.custom-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  margin: 6px 0 12px 0;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.custom-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F59E0B;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.custom-range-slider::-webkit-slider-thumb:hover,
+.custom-range-slider::-webkit-slider-thumb:active {
+  transform: scale(1.18);
+  background: #D97706;
+}
+
+.custom-range-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F59E0B;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .visualizer-wrapper-clean svg {
@@ -1568,7 +1629,26 @@ input, select, textarea {
   }
 
   .calculator-box-clean {
-    padding: 1.75rem;
+    padding: 1.75rem 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .calc-result-panel-clean {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .calc-summary-row-clean {
+    font-size: 0.875rem;
+    gap: 0.5rem;
+  }
+
+  .calc-summary-val-clean {
+    font-size: 0.95rem;
   }
 
   .stats-bar-grid {
@@ -1633,12 +1713,26 @@ input, select, textarea {
 
   .contact-info-card-clean,
   .contact-form-card-clean {
-    padding: 1.5rem;
+    padding: 1.75rem 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .form-grid-2col {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .vision-mission-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 
   .modal-card {
     padding: 1.75rem 1.25rem;
     width: 95%;
+    box-sizing: border-box;
   }
 
   .modal-grid-2col {
@@ -1663,7 +1757,7 @@ input, select, textarea {
 /* Extra Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 0.85rem;
   }
 
   .navbar-inner {
@@ -1702,12 +1796,18 @@ input, select, textarea {
   }
 
   .calculator-box-clean {
-    padding: 1.25rem;
+    padding: 1.25rem 0.85rem;
     border-radius: 14px;
   }
 
   .calc-result-panel-clean {
-    padding: 1.25rem;
+    padding: 1.25rem 0.85rem;
+    border-radius: 14px;
+  }
+
+  .visualizer-wrapper-clean {
+    height: 200px;
+    margin-bottom: 1rem;
   }
 
   .philosophy-box-clean {
@@ -1720,11 +1820,11 @@ input, select, textarea {
 
   .contact-info-card-clean,
   .contact-form-card-clean {
-    padding: 1.25rem;
+    padding: 1.25rem 0.85rem;
   }
 
   .modal-card {
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 0.85rem;
     border-radius: 14px;
   }
 }

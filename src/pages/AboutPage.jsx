@@ -128,7 +128,7 @@ export default function AboutPage({ setActivePage, onOpenQuote }) {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
+          <div className="vision-mission-grid" style={{ marginBottom: '4rem' }}>
             <div className="feature-box-clean" style={{ padding: '2.75rem 2.25rem' }}>
               <div className="feature-icon-circle">🎯</div>
               <h3 style={{ fontSize: '1.6rem', marginBottom: '1rem' }}>Our Vision</h3>

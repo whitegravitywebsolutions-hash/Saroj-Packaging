@@ -9,7 +9,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
     { id: 'home', label: 'Home' },
     { id: 'products', label: 'Product' },
     { id: 'about', label: 'About' },
-    { id: 'contact', label: 'Contact us' }
+    { id: 'contact', label: 'Contact Us' }
   ];
 
   const handleNavClick = (pageId) => {

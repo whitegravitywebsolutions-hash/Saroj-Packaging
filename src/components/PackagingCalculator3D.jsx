@@ -49,6 +49,12 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
     window.open(`https://wa.me/${COMPANY_INFO.whatsappRaw}?text=${encodeURIComponent(waText)}`, '_blank');
   };
 
+  // Slider Fill Percentages
+  const lengthPct = (((length - 4) / (36 - 4)) * 100).toFixed(1);
+  const widthPct = (((width - 4) / (30 - 4)) * 100).toFixed(1);
+  const heightPct = (((height - 3) / (28 - 3)) * 100).toFixed(1);
+  const qtyPct = (((quantity - 100) / (5000 - 100)) * 100).toFixed(1);
+
   return (
     <div className="calculator-box-clean" id="3dPackagingCalculator">
       <div className="calc-grid-clean">
@@ -87,8 +93,9 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
 
           {/* Dimension Sliders */}
           <div className="form-group">
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.2rem' }}>
-              <label>Length: {length} inches ({l_cm} cm)</label>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+              <label style={{ fontWeight: 700, fontSize: '0.9rem' }}>Length</label>
+              <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#D97706' }}>{length} inches ({l_cm} cm)</span>
             </div>
             <input
               type="range"
@@ -97,13 +104,17 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
               step="1"
               value={length}
               onChange={(e) => setLength(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#F59E0B' }}
+              className="custom-range-slider"
+              style={{
+                background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${lengthPct}%, #E5E7EB ${lengthPct}%, #E5E7EB 100%)`
+              }}
             />
           </div>
 
           <div className="form-group">
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.2rem' }}>
-              <label>Width: {width} inches ({w_cm} cm)</label>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+              <label style={{ fontWeight: 700, fontSize: '0.9rem' }}>Width</label>
+              <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#D97706' }}>{width} inches ({w_cm} cm)</span>
             </div>
             <input
               type="range"
@@ -112,13 +123,17 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
               step="1"
               value={width}
               onChange={(e) => setWidth(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#F59E0B' }}
+              className="custom-range-slider"
+              style={{
+                background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${widthPct}%, #E5E7EB ${widthPct}%, #E5E7EB 100%)`
+              }}
             />
           </div>
 
           <div className="form-group">
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.2rem' }}>
-              <label>Height / Depth: {height} inches ({h_cm} cm)</label>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+              <label style={{ fontWeight: 700, fontSize: '0.9rem' }}>Height / Depth</label>
+              <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#D97706' }}>{height} inches ({h_cm} cm)</span>
             </div>
             <input
               type="range"
@@ -127,7 +142,10 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
               step="1"
               value={height}
               onChange={(e) => setHeight(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#F59E0B' }}
+              className="custom-range-slider"
+              style={{
+                background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${heightPct}%, #E5E7EB ${heightPct}%, #E5E7EB 100%)`
+              }}
             />
           </div>
 
@@ -164,8 +182,9 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
 
           {/* Quantity */}
           <div className="form-group">
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.2rem' }}>
-              <label>Batch Quantity: {quantity} units</label>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem' }}>
+              <label style={{ fontWeight: 700, fontSize: '0.9rem' }}>Batch Quantity</label>
+              <span style={{ fontSize: '0.875rem', fontWeight: 700, color: '#D97706' }}>{quantity} units</span>
             </div>
             <input
               type="range"
@@ -174,7 +193,10 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
               step="100"
               value={quantity}
               onChange={(e) => setQuantity(Number(e.target.value))}
-              style={{ width: '100%', accentColor: '#F59E0B' }}
+              className="custom-range-slider"
+              style={{
+                background: `linear-gradient(to right, #F59E0B 0%, #F59E0B ${qtyPct}%, #E5E7EB ${qtyPct}%, #E5E7EB 100%)`
+              }}
             />
           </div>
         </div>
