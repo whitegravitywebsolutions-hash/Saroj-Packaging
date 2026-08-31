@@ -1,6 +1,6 @@
 import React from 'react';
 import { COMPANY_INFO } from '../data/contentData';
-import { Phone, Mail, MapPin, Clock, ShieldCheck, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, ShieldCheck, MessageSquare } from 'lucide-react';
 
 export default function Footer({ setActivePage, onOpenQuote }) {
   const handleNav = (pageId) => {
@@ -32,7 +32,7 @@ export default function Footer({ setActivePage, onOpenQuote }) {
               <li><button onClick={() => handleNav('home')}>Home</button></li>
               <li><button onClick={() => handleNav('products')}>Product</button></li>
               <li><button onClick={() => handleNav('about')}>About</button></li>
-              <li><button onClick={() => handleNav('contact')}>Contact us</button></li>
+              <li><button onClick={() => handleNav('contact')}>Contact Us</button></li>
             </ul>
           </div>
 
@@ -64,10 +64,6 @@ export default function Footer({ setActivePage, onOpenQuote }) {
               <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', color: '#D1D5DB' }}>
                 <Mail size={18} style={{ color: '#FBBF24', flexShrink: 0 }} />
                 <span>{COMPANY_INFO.email}</span>
-              </li>
-              <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', color: '#D1D5DB' }}>
-                <Clock size={18} style={{ color: '#FBBF24', flexShrink: 0 }} />
-                <span>{COMPANY_INFO.hours}</span>
               </li>
             </ul>
           </div>

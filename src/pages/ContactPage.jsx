@@ -4,13 +4,12 @@ import {
   Phone, 
   Mail, 
   MapPin, 
-  Clock, 
   MessageSquare, 
   Send, 
   Star, 
   ChevronDown, 
   CheckCircle2, 
-  Search,
+  Search, 
   Sparkles
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -255,16 +254,6 @@ export default function ContactPage({ setActivePage, onShowToast }) {
                 </div>
               </div>
 
-              <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start' }}>
-                <div className="feature-icon-circle" style={{ width: '46px', height: '46px', fontSize: '1.2rem', marginBottom: 0, flexShrink: 0 }}>
-                  <Clock size={22} />
-                </div>
-                <div>
-                  <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem' }}>Working Hours</h4>
-                  <p style={{ color: 'var(--text-body)' }}>{COMPANY_INFO.hours}</p>
-                </div>
-              </div>
-
               <div style={{ marginTop: '0.5rem' }}>
                 <a
                   href={`https://wa.me/${COMPANY_INFO.whatsappRaw}?text=${encodeURIComponent("Hello Saroj Packaging, I want to discuss a bulk packaging requirement.")}`}
@@ -274,7 +263,7 @@ export default function ContactPage({ setActivePage, onShowToast }) {
                   style={{ width: '100%', gap: '0.7rem' }}
                 >
                   <MessageSquare size={18} />
-                  <span>WhatsApp: {COMPANY_INFO.phone}</span>
+                  <span>WhatsApp Now: {COMPANY_INFO.phone}</span>
                 </a>
               </div>
             </div>

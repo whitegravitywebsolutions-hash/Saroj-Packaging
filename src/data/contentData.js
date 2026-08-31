@@ -14,7 +14,6 @@ export const COMPANY_INFO = {
   email: "info@sarojpackaging.com",
   whatsapp: "+91 97111 30881",
   whatsappRaw: "919711130881",
-  hours: "Mon – Sat: 9:00 AM – 7:00 PM",
   aboutShort: "Saroj Packaging, based in Greater Noida, is a trusted name in the packaging material industry, founded by Mr. Sanjeev Kumar Jain. With 25 years of experience in the field, we have built our business around quality products, dependable service, and a clear understanding of our customers' packaging requirements.",
   aboutLong: "We deal primarily in a wide range of corrugated rolls, paper, duplex paper, corrugated boxes, and other packaging materials. Our focus is to provide practical and reliable packaging solutions suitable for different business and industrial requirements. Over the years, Saroj Packaging has developed strong knowledge of packaging materials and their applications. We work closely with our customers to understand their requirements and provide the right material with a focus on quality, consistency, and timely service.",
   commitment: "At Saroj Packaging, we believe that good packaging starts with the right material. Our aim is to maintain consistent quality and provide dependable packaging products that support our customers' day-to-day business needs. From packaging material to practical packaging solutions, Saroj Packaging is committed to delivering quality you can depend on.",

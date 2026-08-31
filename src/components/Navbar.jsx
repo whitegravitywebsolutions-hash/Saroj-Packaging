@@ -40,7 +40,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
               style={{ color: '#34D399', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
             >
               <MessageSquare size={14} />
-              <span>WhatsApp Direct</span>
+              <span>WhatsApp Now</span>
             </a>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
                   style={{ width: '100%', justifyContent: 'center' }}
                 >
                   <MessageSquare size={16} />
-                  <span>WhatsApp Direct</span>
+                  <span>WhatsApp Now</span>
                 </a>
                 <button
                   className="btn btn-yellow"
@@ -118,7 +118,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-action-wa-btn"
-                title="WhatsApp Direct (97111 30881)"
+                title="WhatsApp Now (97111 30881)"
                 aria-label="WhatsApp Contact"
               >
                 <MessageSquare size={18} />

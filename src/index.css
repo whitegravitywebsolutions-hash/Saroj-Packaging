@@ -1517,15 +1517,7 @@ input, select, textarea {
   }
 
   .top-notice-bar {
-    padding: 0.5rem 0;
-    font-size: 0.8rem;
-  }
-
-  .top-notice-bar .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.35rem;
+    display: none !important;
   }
 
   .navbar {
