@@ -55,10 +55,10 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
               <img src="/images/logo.png" alt="Saroj Packaging Logo" />
             </button>
 
-            {/* Nav Menu */}
+            {/* Nav Menu Drawer */}
             <ul className={`nav-menu ${mobileOpen ? 'open' : ''}`} id="cleanNavMenu">
               {navItems.map((item) => (
-                <li key={item.id}>
+                <li key={item.id} style={{ width: '100%' }}>
                   <button
                     className={`nav-link ${activePage === item.id ? 'active' : ''}`}
                     onClick={() => handleNavClick(item.id)}
@@ -68,9 +68,39 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
                   </button>
                 </li>
               ))}
+              
+              {/* Mobile Drawer Action Buttons */}
+              <li className="mobile-drawer-actions">
+                <a 
+                  href={`tel:${COMPANY_INFO.phone}`}
+                  className="btn btn-pill-outline"
+                  style={{ width: '100%', justifyContent: 'center' }}
+                >
+                  <Phone size={16} />
+                  <span>Call {COMPANY_INFO.phone}</span>
+                </a>
+                <a 
+                  href={`https://wa.me/${COMPANY_INFO.whatsappRaw}?text=${encodeURIComponent("Hello Saroj Packaging, I would like to inquire about packaging materials.")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-whatsapp"
+                  style={{ width: '100%', justifyContent: 'center' }}
+                >
+                  <MessageSquare size={16} />
+                  <span>WhatsApp Direct</span>
+                </a>
+                <button
+                  className="btn btn-yellow"
+                  onClick={() => { setMobileOpen(false); onOpenQuote('Wholesale Requirement'); }}
+                  style={{ width: '100%', justifyContent: 'center' }}
+                >
+                  <ShoppingBag size={16} />
+                  <span>Get Instant Quote</span>
+                </button>
+              </li>
             </ul>
 
-            {/* Nav Actions */}
+            {/* Nav Actions (Desktop & Mobile Header) */}
             <div className="nav-actions">
               {/* Call Direct Link */}
               <a 
@@ -97,7 +127,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
 
               {/* Request Quote Button */}
               <button
-                className="btn-pill-cart"
+                className="btn-pill-cart hide-mobile-xs"
                 onClick={() => onOpenQuote('Wholesale Requirement')}
                 id="cleanHeaderQuoteBtn"
               >
@@ -116,6 +146,15 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
           </div>
         </div>
       </header>
+
+      {/* Backdrop overlay for mobile menu */}
+      {mobileOpen && (
+        <div 
+          className="mobile-nav-backdrop" 
+          onClick={() => setMobileOpen(false)} 
+          aria-hidden="true"
+        />
+      )}
     </>
   );
 }

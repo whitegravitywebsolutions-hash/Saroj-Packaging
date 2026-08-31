@@ -73,7 +73,7 @@ export default function QuoteModal({ isOpen, onClose, defaultProduct, onShowToas
             />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="modal-grid-2col" style={{ display: 'grid', gap: '1rem' }}>
             <div className="form-group">
               <label>Phone / WhatsApp *</label>
               <input
@@ -98,7 +98,7 @@ export default function QuoteModal({ isOpen, onClose, defaultProduct, onShowToas
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '1rem' }}>
+          <div className="modal-grid-2col" style={{ display: 'grid', gap: '1rem' }}>
             <div className="form-group">
               <label>Product Material *</label>
               <select

@@ -132,7 +132,7 @@ export default function PackagingCalculator3D({ onOpenQuote }) {
           </div>
 
           {/* Ply & GSM */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className="calc-row-2col" style={{ display: 'grid', gap: '1rem' }}>
             <div className="form-group">
               <label>Ply Strength</label>
               <select
