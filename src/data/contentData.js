@@ -104,7 +104,6 @@ export const PRODUCTS_DATA = [
     description: "High-smoothness coated duplex paper providing superior printability, crisp crease definition, and reliable protective performance for packaging and retail cartons.",
     specs: [
       { label: "Backing", value: "Grey Back (Eco/Industrial) & White Back (Premium)" },
-      { label: "GSM Range", value: "180 GSM to 450 GSM" },
       { label: "Coating", value: "LWC / HWC Coated Top Surface" },
       { label: "Format", value: "Reels & Custom Cut Flat Sheets" },
       { label: "Applications", value: "Pharma cartons, apparel packaging, retail cartons, FMCG" }
@@ -113,7 +112,7 @@ export const PRODUCTS_DATA = [
       "Ultra-smooth top coating for high-resolution offset & flexo printing",
       "Excellent foldability, crease recovery, and sharp die-cutting",
       "Superior ink holdout and high gloss print finish",
-      "Strict GSM uniformity and consistent reel winding tension"
+      "Strict quality uniformity and consistent reel winding tension"
     ]
   },
   {
@@ -127,7 +126,6 @@ export const PRODUCTS_DATA = [
     specs: [
       { label: "Paper Grades", value: "Virgin Kraft Liner, Test Liner, Fluting Medium" },
       { label: "Burst Factor (BF)", value: "16 BF, 18 BF, 22 BF, 28 BF, 32 BF" },
-      { label: "GSM Range", value: "90 GSM to 350 GSM" },
       { label: "Reel Widths", value: "80 cm up to 250 cm diameter" },
       { label: "Shades", value: "Natural Kraft Brown, Agro Shade, Golden Kraft" }
     ],

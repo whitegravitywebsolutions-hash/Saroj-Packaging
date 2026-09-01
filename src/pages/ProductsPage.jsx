@@ -149,7 +149,7 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
               <thead>
                 <tr style={{ borderBottom: '2px solid #111827', color: '#111827' }}>
                   <th style={{ padding: '1rem' }}>Product Line</th>
-                  <th style={{ padding: '1rem' }}>GSM / Caliper Range</th>
+                  <th style={{ padding: '1rem' }}>Structure / Grade</th>
                   <th style={{ padding: '1rem' }}>Burst Factor (BF) / ECT</th>
                   <th style={{ padding: '1rem' }}>Standard Formats</th>
                   <th style={{ padding: '1rem' }}>Target Applications</th>
@@ -165,28 +165,28 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                   <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Corrugated Boxes (3-Ply)</td>
-                  <td style={{ padding: '1rem' }}>100 – 180 GSM Kraft</td>
+                  <td style={{ padding: '1rem' }}>Virgin & Semi-Kraft</td>
                   <td style={{ padding: '1rem' }}>18 BF – 24 BF</td>
                   <td style={{ padding: '1rem' }}>Custom RSC & Die-cut cartons</td>
                   <td style={{ padding: '1rem' }}>Lightweight consumer goods, eCommerce & apparel</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                   <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Corrugated Boxes (5-Ply / 7-Ply)</td>
-                  <td style={{ padding: '1rem' }}>140 – 250 GSM Heavy</td>
+                  <td style={{ padding: '1rem' }}>Heavy-Duty Kraft Liner</td>
                   <td style={{ padding: '1rem' }}>22 BF – 32 BF (High ECT)</td>
                   <td style={{ padding: '1rem' }}>Master export shipping cartons</td>
                   <td style={{ padding: '1rem' }}>Export goods, automotive parts & machinery</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                   <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Duplex Paper (Grey/White Back)</td>
-                  <td style={{ padding: '1rem' }}>180 – 450 GSM</td>
-                  <td style={{ padding: '1rem' }}>Coated LWC / HWC</td>
+                  <td style={{ padding: '1rem' }}>LWC / HWC Coated Top</td>
+                  <td style={{ padding: '1rem' }}>Coated Finish</td>
                   <td style={{ padding: '1rem' }}>Custom flat sheets & reels</td>
                   <td style={{ padding: '1rem' }}>Mono-cartons, pharma boxes & retail packaging</td>
                 </tr>
                 <tr>
                   <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Industrial Kraft Paper</td>
-                  <td style={{ padding: '1rem' }}>90 – 350 GSM</td>
+                  <td style={{ padding: '1rem' }}>Virgin Kraft & Test Liner</td>
                   <td style={{ padding: '1rem' }}>16 BF – 32 BF Virgin & Test</td>
                   <td style={{ padding: '1rem' }}>Jumbo converting reels</td>
                   <td style={{ padding: '1rem' }}>Corrugation, fluting medium, paper bags & core tubes</td>
