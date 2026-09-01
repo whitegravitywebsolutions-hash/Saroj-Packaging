@@ -158,9 +158,9 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
               <tbody style={{ color: '#4B5563' }}>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
                   <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Corrugated Rolls</td>
-                  <td style={{ padding: '1rem' }}>80 – 250 GSM</td>
+                  <td style={{ padding: '1rem' }}>80 – 250 GSM (B & E Flute)</td>
                   <td style={{ padding: '1rem' }}>16 BF – 24 BF</td>
-                  <td style={{ padding: '1rem' }}>Widths 24" to 75" (Custom Rolls)</td>
+                  <td style={{ padding: '1rem' }}>Widths 24" to 52" (Custom Slit Sizes)</td>
                   <td style={{ padding: '1rem' }}>Wrapping, furniture cushioning & surface protection</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>

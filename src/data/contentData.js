@@ -62,8 +62,8 @@ export const PRODUCTS_DATA = [
     specs: [
       { label: "Structure", value: "Single Face 2-Ply / Fluted Roll" },
       { label: "GSM Range", value: "80 GSM to 250 GSM" },
-      { label: "Flute Types", value: "B-Flute, C-Flute, E-Flute" },
-      { label: "Roll Widths", value: '24", 36", 48", 60", 72" & Custom slit sizes' },
+      { label: "Flute Types", value: "B-Flute, E-Flute" },
+      { label: "Roll Widths", value: '24" to 52" (24", 36", 48", 52" & Custom Slit Widths)' },
       { label: "Key Benefit", value: "Superior impact damping & scratch resistance" }
     ],
     features: [
@@ -225,7 +225,7 @@ export const FAQS_DATA = [
   {
     id: 3,
     question: "Do you provide corrugated rolls?",
-    answer: "Yes, corrugated rolls are one of our primary product offerings. We manufacture single-face and multi-ply fluted rolls in various widths (24” to 72”+) and GSMs for wrapping, cushioning, and protective packaging."
+    answer: "Yes, corrugated rolls are one of our primary product offerings. We manufacture single-face B-Flute and E-Flute rolls in various widths (24” to 52”) and GSMs (80 to 250 GSM) for wrapping, cushioning, and protective packaging."
   },
   {
     id: 4,
