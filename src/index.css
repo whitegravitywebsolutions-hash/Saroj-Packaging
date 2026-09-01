@@ -470,6 +470,19 @@ input, select, textarea {
   line-height: 1.12;
 }
 
+.highlight-saroj-name {
+  display: inline-block;
+  background: linear-gradient(135deg, #E5252A 0%, #C71B20 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  position: relative;
+  filter: drop-shadow(0 2px 8px rgba(229, 37, 42, 0.2));
+}
+
 .hero-brand-name-title {
   display: inline-block;
   background: linear-gradient(135deg, #E5252A 0%, #B91C1C 100%);

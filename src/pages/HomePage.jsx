@@ -37,22 +37,20 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
           <div className="hero-grid-reference">
             {/* Left Content */}
             <div className="hero-content">
-              {/* Clean Single Brand Badge */}
+              {/* Clean Single Location/Experience Badge */}
               <div className="hero-brand-highlight-tag">
                 <span className="brand-glow-dot"></span>
-                <span className="brand-highlight-name">SAROJ PACKAGING</span>
-                <span className="brand-highlight-divider">•</span>
-                <span className="brand-highlight-location">25+ YEARS EXCELLENCE</span>
+                <span className="brand-highlight-location">GREATER NOIDA • 25+ YEARS EXCELLENCE</span>
               </div>
 
               <h1 className="hero-title-bold">
-                <span className="hero-title-main">PREMIUM PACKAGING,</span><br />
+                <span className="highlight-saroj-name">SAROJ PACKAGING</span><br />
                 <span className="hero-title-subtitle">POCKET FRIENDLY </span>
                 <span className="highlight">PRICE.</span>
               </h1>
 
               <p className="hero-subtitle-text">
-                Greater Noida’s trusted factory manufacturer & supplier of corrugated rolls, heavy-duty boxes, duplex boards, and kraft paper reels at wholesale prices.
+                <strong className="brand-text-highlight">Saroj Packaging</strong> is Greater Noida’s trusted factory manufacturer & supplier of corrugated rolls, heavy-duty boxes, duplex boards, and kraft paper reels at wholesale prices.
               </p>
 
               {/* Action Buttons Group */}
