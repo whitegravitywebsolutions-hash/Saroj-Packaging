@@ -37,29 +37,22 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
           <div className="hero-grid-reference">
             {/* Left Content */}
             <div className="hero-content">
-              {/* Top Trust Badge */}
-              <div className="hero-badge-pill">
-                <Sparkles size={16} className="hero-badge-icon" />
-                <span><strong>SAROJ PACKAGING</strong> • 25+ Years of Industry Mastery</span>
-              </div>
-
-              {/* Brand Name Highlight Banner */}
+              {/* Clean Single Brand Badge */}
               <div className="hero-brand-highlight-tag">
                 <span className="brand-glow-dot"></span>
                 <span className="brand-highlight-name">SAROJ PACKAGING</span>
                 <span className="brand-highlight-divider">•</span>
-                <span className="brand-highlight-location">GREATER NOIDA</span>
+                <span className="brand-highlight-location">25+ YEARS EXCELLENCE</span>
               </div>
 
               <h1 className="hero-title-bold">
-                <span className="hero-brand-name-title">SAROJ PACKAGING</span><br />
-                <span className="hero-title-main">PACKAGING PRODUCTS,</span><br />
+                <span className="hero-title-main">PREMIUM PACKAGING,</span><br />
                 <span className="hero-title-subtitle">POCKET FRIENDLY </span>
                 <span className="highlight">PRICE.</span>
               </h1>
 
               <p className="hero-subtitle-text">
-                <strong className="brand-text-highlight">Saroj Packaging</strong> is Greater Noida's trusted direct manufacturer & supplier of premium corrugated rolls, heavy-duty 3/5/7-ply boxes, duplex boards, and high-strength kraft paper reels. Precision engineered for maximum cargo protection with pocket-friendly wholesale rates.
+                Greater Noida’s trusted factory manufacturer & supplier of corrugated rolls, heavy-duty boxes, duplex boards, and kraft paper reels at wholesale prices.
               </p>
 
               {/* Action Buttons Group */}
