@@ -10,7 +10,7 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
     { id: 'all', label: 'All Products (5)' },
     { id: 'rolls', label: 'Corrugated Rolls' },
     { id: 'boxes', label: 'Corrugated Boxes' },
-    { id: 'duplex', label: 'Duplex Paper & Board' },
+    { id: 'duplex', label: 'Duplex Paper' },
     { id: 'paper', label: 'Paper & Kraft Reels' },
     { id: 'other', label: 'Other Materials' }
   ];
@@ -140,7 +140,7 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
             </div>
             <h2>Technical Specifications Matrix</h2>
             <p>
-              Detailed technical grade comparisons for Corrugated Rolls, Boxes, Duplex Boards, and Kraft Paper reels.
+              Detailed technical grade comparisons for Corrugated Rolls, Boxes, Duplex Paper, and Kraft Paper reels.
             </p>
           </div>
 
@@ -178,8 +178,8 @@ export default function ProductsPage({ setActivePage, onOpenQuote }) {
                   <td style={{ padding: '1rem' }}>Export goods, automotive parts & machinery</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid var(--border-light)' }}>
-                  <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Duplex Boards (Grey/White Back)</td>
-                  <td style={{ padding: '1rem' }}>200 – 450 GSM</td>
+                  <td style={{ padding: '1rem', fontWeight: 800, color: '#111827' }}>Duplex Paper (Grey/White Back)</td>
+                  <td style={{ padding: '1rem' }}>180 – 450 GSM</td>
                   <td style={{ padding: '1rem' }}>Coated LWC / HWC</td>
                   <td style={{ padding: '1rem' }}>Custom flat sheets & reels</td>
                   <td style={{ padding: '1rem' }}>Mono-cartons, pharma boxes & retail packaging</td>

@@ -50,7 +50,7 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
               </h1>
 
               <p className="hero-subtitle-text">
-                <strong className="brand-text-highlight">Saroj Packaging</strong> is Greater Noida’s trusted factory manufacturer & supplier of corrugated rolls, heavy-duty boxes, duplex boards, and kraft paper reels at wholesale prices.
+                <strong className="brand-text-highlight">Saroj Packaging</strong> is Greater Noida’s trusted factory manufacturer & supplier of corrugated rolls, heavy-duty boxes, duplex paper, and kraft paper reels at wholesale prices.
               </p>
 
               {/* Action Buttons Group */}

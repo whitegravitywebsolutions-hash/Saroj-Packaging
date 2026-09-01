@@ -98,23 +98,23 @@ export const PRODUCTS_DATA = [
   {
     id: "duplex",
     category: "duplex",
-    name: "Duplex Paper & Board",
-    tagline: "Premium Coated White & Grey Back Boards",
+    name: "Duplex Paper",
+    tagline: "Premium Coated White & Grey Back Duplex Paper",
     image: "/images/duplex_paper.jpg",
-    badge: "Coated Finish",
-    description: "High-smoothness LWC/HWC coated duplex boards providing superior printability, crisp crease definition, and rigid structural durability for retail mono-cartons.",
+    badge: "Coated Paper",
+    description: "High-smoothness coated duplex paper providing superior printability, crisp crease definition, and reliable protective performance for packaging and retail cartons.",
     specs: [
       { label: "Backing", value: "Grey Back (Eco/Industrial) & White Back (Premium)" },
-      { label: "Caliper Range", value: "200 GSM to 450 GSM" },
-      { label: "Coating", value: "Light Weight (LWC) / Heavy Weight (HWC)" },
+      { label: "GSM Range", value: "180 GSM to 450 GSM" },
+      { label: "Coating", value: "LWC / HWC Coated Top Surface" },
       { label: "Format", value: "Reels & Custom Cut Flat Sheets" },
-      { label: "Applications", value: "Pharma cartons, apparel boxes, FMCG packaging" }
+      { label: "Applications", value: "Pharma cartons, apparel packaging, retail cartons, FMCG" }
     ],
     features: [
-      "Ultra-smooth top coating for high-resolution offset printing",
-      "Excellent crease recovery and die-cutting sharpness",
-      "Superior ink holdout and high gloss retention",
-      "Strict caliper uniformity across entire batch"
+      "Ultra-smooth top coating for high-resolution offset & flexo printing",
+      "Excellent foldability, crease recovery, and sharp die-cutting",
+      "Superior ink holdout and high gloss print finish",
+      "Strict GSM uniformity and consistent reel winding tension"
     ]
   },
   {
@@ -235,7 +235,7 @@ export const FAQS_DATA = [
   {
     id: 5,
     question: "Do you supply paper and duplex paper?",
-    answer: "Yes. Saroj Packaging deals in paper (Kraft reels, test liner, fluting medium) and duplex paper (coated grey back and white back boards) along with other industrial packaging materials."
+    answer: "Yes. Saroj Packaging deals in paper (Kraft reels, test liner, fluting medium) and duplex paper (coated grey back and white back paper) along with other industrial packaging materials."
   },
   {
     id: 6,

@@ -108,7 +108,7 @@ export default function QuoteModal({ isOpen, onClose, defaultProduct, onShowToas
               >
                 <option value="Corrugated Rolls">Corrugated Rolls (2-Ply)</option>
                 <option value="Corrugated Boxes">Corrugated Boxes (3/5/7-Ply)</option>
-                <option value="Duplex Paper & Board">Duplex Paper & Board</option>
+                <option value="Duplex Paper">Duplex Paper (Grey / White Back)</option>
                 <option value="Industrial Paper & Kraft">Industrial Paper & Kraft Reels</option>
                 <option value="Other Packaging Materials">Other Allied Supplies</option>
                 <option value="Custom Packaging Spec">Custom Sizing / Die-Cut</option>

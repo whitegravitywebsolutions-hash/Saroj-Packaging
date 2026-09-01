@@ -327,7 +327,7 @@ export default function ContactPage({ setActivePage, onShowToast }) {
                     >
                       <option value="Corrugated Rolls">Corrugated Rolls (2-Ply Fluted)</option>
                       <option value="Corrugated Boxes">Corrugated Boxes (3/5/7-Ply)</option>
-                      <option value="Duplex Paper & Board">Duplex Paper & Board</option>
+                      <option value="Duplex Paper">Duplex Paper (Grey/White Back)</option>
                       <option value="Industrial Paper & Kraft">Industrial Paper & Kraft Reels</option>
                       <option value="Other Packaging Materials">Other Allied Materials</option>
                       <option value="Custom Size / Spec">Custom Sizing / Die-Cut Spec</option>
