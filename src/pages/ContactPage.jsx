@@ -236,8 +236,9 @@ export default function ContactPage({ setActivePage, onShowToast }) {
                 </div>
                 <div>
                   <h4 style={{ fontSize: '1.1rem', marginBottom: '0.2rem' }}>Phone / Inquiries</h4>
-                  <p>
+                  <p style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
                     <a href={`tel:${COMPANY_INFO.phone}`} style={{ color: 'var(--text-body)', fontWeight: 600 }}>{COMPANY_INFO.phone}</a>
+                    <a href={`tel:${COMPANY_INFO.phoneSecondary}`} style={{ color: 'var(--text-body)', fontWeight: 600 }}>{COMPANY_INFO.phoneSecondary}</a>
                   </p>
                 </div>
               </div>

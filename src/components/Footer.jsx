@@ -44,11 +44,16 @@ export default function Footer({ setActivePage, onOpenQuote }) {
                 <MapPin size={18} style={{ color: '#FBBF24', flexShrink: 0, marginTop: '3px' }} />
                 <span>{COMPANY_INFO.location}</span>
               </li>
-              <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', color: '#D1D5DB' }}>
-                <Phone size={18} style={{ color: '#FBBF24', flexShrink: 0 }} />
-                <a href={`tel:${COMPANY_INFO.phone}`} style={{ color: '#FBBF24', fontWeight: 700 }}>
-                  {COMPANY_INFO.phone}
-                </a>
+              <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', color: '#D1D5DB' }}>
+                <Phone size={18} style={{ color: '#FBBF24', flexShrink: 0, marginTop: '3px' }} />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <a href={`tel:${COMPANY_INFO.phone}`} style={{ color: '#FBBF24', fontWeight: 700 }}>
+                    {COMPANY_INFO.phone}
+                  </a>
+                  <a href={`tel:${COMPANY_INFO.phoneSecondary}`} style={{ color: '#FBBF24', fontWeight: 700 }}>
+                    {COMPANY_INFO.phoneSecondary}
+                  </a>
+                </div>
               </li>
               <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', color: '#D1D5DB' }}>
                 <MessageSquare size={18} style={{ color: '#34D399', flexShrink: 0 }} />
@@ -63,7 +68,9 @@ export default function Footer({ setActivePage, onOpenQuote }) {
               </li>
               <li style={{ display: 'flex', gap: '0.6rem', alignItems: 'center', color: '#D1D5DB' }}>
                 <Mail size={18} style={{ color: '#FBBF24', flexShrink: 0 }} />
-                <span>{COMPANY_INFO.email}</span>
+                <a href={`mailto:${COMPANY_INFO.email}`} style={{ color: '#D1D5DB' }}>
+                  {COMPANY_INFO.email}
+                </a>
               </li>
             </ul>
           </div>
