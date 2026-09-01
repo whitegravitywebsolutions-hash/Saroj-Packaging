@@ -26,7 +26,7 @@ export default function Navbar({ activePage, setActivePage, onOpenQuote }) {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
             <span>📍 {COMPANY_INFO.location}</span>
             <span style={{ opacity: 0.5 }}>|</span>
-            <span>★ 25+ Years of Proven Packaging Mastery</span>
+            <span>★ <strong style={{ color: '#FBBF24', letterSpacing: '0.04em' }}>SAROJ PACKAGING</strong> — 25+ Years of Proven Packaging Mastery</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
             <a href={`tel:${COMPANY_INFO.phone}`} style={{ color: '#FBBF24', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
