@@ -1250,9 +1250,9 @@ input, select, textarea {
 
 .footer-grid-clean {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 1.4fr 0.9fr 1.1fr 1.3fr;
+  gap: 2.75rem;
+  margin-bottom: 3.5rem;
 }
 
 .footer-col h4 {
@@ -1526,7 +1526,7 @@ input, select, textarea {
   }
 
   .footer-grid-clean {
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
   }
 }

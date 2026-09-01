@@ -36,6 +36,17 @@ export default function Footer({ setActivePage, onOpenQuote }) {
             </ul>
           </div>
 
+          {/* Product Offerings */}
+          <div className="footer-col">
+            <h4>Our Products</h4>
+            <ul className="footer-links">
+              <li><button onClick={() => handleNav('products')}>Corrugated Rolls</button></li>
+              <li><button onClick={() => handleNav('products')}>Corrugated Boxes</button></li>
+              <li><button onClick={() => handleNav('products')}>Duplex Paper</button></li>
+              <li><button onClick={() => handleNav('products')}>Kraft Paper Reels</button></li>
+            </ul>
+          </div>
+
           {/* Contact Details */}
           <div className="footer-col">
             <h4>Greater Noida Hub</h4>
