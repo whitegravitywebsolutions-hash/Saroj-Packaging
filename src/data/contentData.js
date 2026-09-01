@@ -61,9 +61,8 @@ export const PRODUCTS_DATA = [
     description: "Flexible, shock-absorbent single-face and multi-flute corrugated rolls ideal for furniture wrapping, ceramic protection, metal parts, and industrial bundling.",
     specs: [
       { label: "Structure", value: "Single Face 2-Ply / Fluted Roll" },
-      { label: "GSM Range", value: "80 GSM to 250 GSM" },
       { label: "Flute Types", value: "B-Flute, E-Flute" },
-      { label: "Roll Widths", value: '24" to 52" (24", 36", 48", 52" & Custom Slit Widths)' },
+      { label: "Roll Widths", value: '24" to 52"' },
       { label: "Key Benefit", value: "Superior impact damping & scratch resistance" }
     ],
     features: [
@@ -225,7 +224,7 @@ export const FAQS_DATA = [
   {
     id: 3,
     question: "Do you provide corrugated rolls?",
-    answer: "Yes, corrugated rolls are one of our primary product offerings. We manufacture single-face B-Flute and E-Flute rolls in various widths (24” to 52”) and GSMs (80 to 250 GSM) for wrapping, cushioning, and protective packaging."
+    answer: "Yes, corrugated rolls are one of our primary product offerings. We manufacture single-face B-Flute and E-Flute rolls in widths from 24” to 52” for wrapping, cushioning, and protective packaging."
   },
   {
     id: 4,
