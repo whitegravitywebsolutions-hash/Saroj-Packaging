@@ -1,6 +1,7 @@
 import React from 'react';
 import { COMPANY_INFO } from '../data/contentData';
 import { Phone, Mail, MapPin, ShieldCheck, MessageSquare } from 'lucide-react';
+import { InstagramIcon, FacebookIcon } from './SocialIcons';
 
 export default function Footer({ setActivePage, onOpenQuote }) {
   const handleNav = (pageId) => {
@@ -22,6 +23,31 @@ export default function Footer({ setActivePage, onOpenQuote }) {
             </p>
             <div style={{ fontSize: '0.875rem', color: '#FBBF24', marginTop: '1rem', fontWeight: 700 }}>
               Founder: {COMPANY_INFO.founder}
+            </div>
+
+            {/* Social Media Links */}
+            <div style={{ marginTop: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <span style={{ fontSize: '0.85rem', color: '#9CA3AF', fontWeight: 600 }}>Follow Us:</span>
+              <a
+                href={COMPANY_INFO.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Saroj Packaging on Instagram"
+                className="social-icon-btn instagram-btn"
+                title="Instagram: @packagingsaroj2026"
+              >
+                <InstagramIcon size={18} />
+              </a>
+              <a
+                href={COMPANY_INFO.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Saroj Packaging on Facebook"
+                className="social-icon-btn facebook-btn"
+                title="Facebook: @sarojpackaging"
+              >
+                <FacebookIcon size={18} />
+              </a>
             </div>
           </div>
 

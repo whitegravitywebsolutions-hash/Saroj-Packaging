@@ -12,6 +12,7 @@ import {
   Search, 
   Sparkles
 } from 'lucide-react';
+import { InstagramIcon, FacebookIcon } from '../components/SocialIcons';
 import confetti from 'canvas-confetti';
 
 export default function ContactPage({ setActivePage, onShowToast }) {
@@ -266,6 +267,35 @@ export default function ContactPage({ setActivePage, onShowToast }) {
                   <MessageSquare size={18} />
                   <span>WhatsApp Now: {COMPANY_INFO.phone}</span>
                 </a>
+              </div>
+
+              {/* Social Media Channels */}
+              <div style={{ marginTop: '1.25rem', paddingTop: '1.25rem', borderTop: '1px solid var(--border-light)' }}>
+                <div style={{ fontSize: '0.875rem', fontWeight: 800, color: 'var(--text-heading)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  Connect on Social Media
+                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                  <a
+                    href={COMPANY_INFO.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-pill-outline"
+                    style={{ justifyContent: 'center', gap: '0.5rem', fontSize: '0.85rem', padding: '0.6rem 0.75rem' }}
+                  >
+                    <InstagramIcon size={17} color="#E1306C" />
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href={COMPANY_INFO.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-pill-outline"
+                    style={{ justifyContent: 'center', gap: '0.5rem', fontSize: '0.85rem', padding: '0.6rem 0.75rem' }}
+                  >
+                    <FacebookIcon size={17} color="#1877F2" />
+                    <span>Facebook</span>
+                  </a>
+                </div>
               </div>
             </div>
 
