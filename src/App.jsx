@@ -8,12 +8,62 @@ import ProductsPage from './pages/ProductsPage';
 import ContactPage from './pages/ContactPage';
 import { MessageSquare, CheckCircle } from 'lucide-react';
 
+// URL Path Mappings
+const getPageFromUrl = () => {
+  if (typeof window === 'undefined') return 'home';
+  const path = window.location.pathname.toLowerCase().replace(/^\/|\/$/g, '');
+  if (path === 'about') return 'about';
+  if (path === 'product' || path === 'products') return 'products';
+  if (path === 'contact' || path === 'contact-us' || path === 'contactus') return 'contact';
+  return 'home';
+};
+
+const getUrlFromPage = (page) => {
+  if (page === 'about') return '/about';
+  if (page === 'products') return '/product';
+  if (page === 'contact') return '/contact-us';
+  return '/';
+};
+
 function App() {
-  const [activePage, setActivePage] = useState('home');
+  const [activePage, setActivePageState] = useState(() => getPageFromUrl());
   const [theme, setTheme] = useState(() => localStorage.getItem('saroj_theme') || 'dark');
   const [quoteModalOpen, setQuoteModalOpen] = useState(false);
   const [quoteProduct, setQuoteProduct] = useState('');
   const [toast, setToast] = useState({ show: false, message: '' });
+
+  // Update Page & Browser URL History
+  const setActivePage = (page, pushHistory = true) => {
+    setActivePageState(page);
+    if (pushHistory && typeof window !== 'undefined') {
+      const url = getUrlFromPage(page);
+      if (window.location.pathname !== url) {
+        window.history.pushState({ page }, '', url);
+      }
+    }
+  };
+
+  // Listen to browser Back/Forward navigation & direct URL loads
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state && event.state.page) {
+        setActivePageState(event.state.page);
+      } else {
+        setActivePageState(getPageFromUrl());
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    // Ensure correct initial history state on page load/refresh
+    const initialPage = getPageFromUrl();
+    const currentUrl = getUrlFromPage(initialPage);
+    window.history.replaceState({ page: initialPage }, '', currentUrl);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
 
   // Sync Theme to Root
   useEffect(() => {
