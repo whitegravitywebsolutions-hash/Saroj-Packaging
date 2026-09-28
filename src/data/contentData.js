@@ -242,3 +242,33 @@ export const FAQS_DATA = [
     answer: "We are headquartered in Greater Noida, Uttar Pradesh. We actively serve businesses across Greater Noida, Noida, Delhi NCR, and neighboring industrial hubs with prompt and reliable logistics."
   }
 ];
+
+export const VIDEOS_DATA = [
+  {
+    id: 1,
+    title: "Corrugation & Roll Manufacturing",
+    category: "Production Line",
+    description: "High-speed corrugation machinery producing durable B-Flute & E-Flute protective packaging rolls.",
+    videoUrl: "/videos/video1.mp4",
+    poster: "/images/corrugated_rolls.jpg",
+    badge: "🏭 Manufacturing"
+  },
+  {
+    id: 2,
+    title: "Precision Slitting & Machinery",
+    category: "Converting Plant",
+    description: "Industrial rotary cutting and precision slitter machines tailoring rolls to custom 24\" to 52\" widths.",
+    videoUrl: "/videos/video2.mp4",
+    poster: "/images/factory_machinery.jpg",
+    badge: "⚙️ Converting"
+  },
+  {
+    id: 3,
+    title: "Warehouse & Bulk Dispatch",
+    category: "Greater Noida Facility",
+    description: "Inside our heavy-duty paper reel and corrugated stock warehouse ready for rapid dispatch across Delhi-NCR.",
+    videoUrl: "/videos/video3.mp4",
+    poster: "/images/kraft_paper_rolls.jpg",
+    badge: "📦 Warehouse & Logistics"
+  }
+];

@@ -1123,6 +1123,81 @@ input, select, textarea {
 }
 
 /* ==========================================================================
+   Factory Videos Showcase
+   ========================================================================== */
+.factory-videos-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.videos-grid-clean {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.video-card-clean {
+  background: #1E293B;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card-clean:hover {
+  transform: translateY(-6px);
+  border-color: #FBBF24;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.video-player-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: #020617;
+  overflow: hidden;
+}
+
+.factory-video-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: #000;
+}
+
+.video-category-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #FBBF24;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.video-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* ==========================================================================
    Reviews & Testimonials
    ========================================================================== */
 .reviews-grid-clean {
@@ -1572,9 +1647,10 @@ input, select, textarea {
     gap: 2.5rem;
   }
 
-  .philosophy-grid-clean {
+  .philosophy-grid-clean,
+  .videos-grid-clean {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 
   .footer-grid-clean {
