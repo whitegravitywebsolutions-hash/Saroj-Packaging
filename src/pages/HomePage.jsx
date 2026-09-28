@@ -108,8 +108,8 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
               <div className="hero-showcase-card">
                 <div className="hero-card-image-wrap">
                   <img 
-                    src="/images/corrugated_rolls.jpg" 
-                    alt="Saroj Packaging Corrugated Materials in Greater Noida" 
+                    src="/images/warehouse_inspection.jpg" 
+                    alt="Saroj Packaging Corrugated Materials & Paper Reels in Greater Noida" 
                     className="hero-main-img"
                   />
                   <div className="hero-img-overlay-tag">
@@ -230,6 +230,22 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
               <div className="feature-icon-circle">💰</div>
               <h3>Pocket-Friendly Rates</h3>
               <p>Direct wholesale pricing and bulk supply advantages that optimize your operational packaging expenditures.</p>
+            </div>
+          </div>
+
+          {/* Authentic Facility & Paper Rolls Showcase */}
+          <div className="home-visual-banner-grid">
+            <div className="home-visual-card">
+              <img 
+                src="/images/quality_paper_rolls.jpg" 
+                alt="Quality Paper Rolls for a Greener Tomorrow - Saroj Packaging Greater Noida" 
+              />
+            </div>
+            <div className="home-visual-card">
+              <img 
+                src="/images/warehouse_inspection.jpg" 
+                alt="Factory Warehouse & Jumbo Paper Reels Inspection - Saroj Packaging Greater Noida" 
+              />
             </div>
           </div>
         </div>
