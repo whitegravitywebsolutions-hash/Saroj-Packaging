@@ -108,8 +108,8 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
               <div className="hero-showcase-card">
                 <div className="hero-card-image-wrap">
                   <img 
-                    src="/images/warehouse_inspection.jpg" 
-                    alt="Saroj Packaging Corrugated Materials & Paper Reels in Greater Noida" 
+                    src="/images/corrugated_rolls.jpg" 
+                    alt="Saroj Packaging Corrugated Materials in Greater Noida" 
                     className="hero-main-img"
                   />
                   <div className="hero-img-overlay-tag">
