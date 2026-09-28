@@ -303,87 +303,60 @@ export default function HomePage({ setActivePage, onOpenQuote }) {
        {/* Factory Operations & Manufacturing Videos Showcase */}
        <section className="section-clean factory-videos-section" style={{ background: '#0F172A', color: '#FFFFFF' }} id="factoryVideosSection">
          <div className="container">
-           <div className="section-header-clean" style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+           <div className="section-header-clean" style={{ textAlign: 'center', marginBottom: '3rem' }}>
              <div style={{ fontSize: '0.875rem', fontWeight: 800, color: '#FBBF24', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#EF4444', display: 'inline-block' }}></span>
-               Manufacturing in Action
+               Production Line
              </div>
              <h2 style={{ color: '#FFFFFF', fontSize: '2.5rem', marginBottom: '0.75rem' }}>
-               Watch Our Factory &amp; Machinery
+               Corrugation &amp; Roll Manufacturing
              </h2>
              <p style={{ color: '#94A3B8', maxWidth: '680px', margin: '0 auto', fontSize: '1.05rem' }}>
-               Take an inside look at our corrugation lines, precision slitting machinery, and heavy-duty paper reel storage in Greater Noida.
+               High-speed corrugation machinery producing durable B-Flute &amp; E-Flute protective packaging rolls.
              </p>
            </div>
 
            <div className="videos-grid-clean">
-             {VIDEOS_DATA.map((vid) => (
-               <div key={vid.id} className="video-card-clean">
-                 <div className="video-player-wrapper">
-                   <video
-                     controls
-                     preload="metadata"
-                     playsInline
-                     poster={vid.poster}
-                     className="factory-video-element"
-                   >
-                     <source src={vid.videoUrl} type="video/mp4" />
-                     Your browser does not support the video tag.
-                   </video>
-                   <span className="video-category-tag">{vid.badge}</span>
-                 </div>
-                 <div className="video-card-body">
-                   <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#FBBF24', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.35rem' }}>
-                     {vid.category}
-                   </div>
-                   <h3 style={{ color: '#F8FAFC', fontSize: '1.25rem', marginBottom: '0.5rem', fontWeight: 700 }}>
-                     {vid.title}
-                   </h3>
-                   <p style={{ color: '#94A3B8', fontSize: '0.925rem', lineHeight: '1.6', marginBottom: '1.25rem' }}>
-                     {vid.description}
-                   </p>
-                   <div style={{ display: 'flex', gap: '0.75rem' }}>
-                     <button
-                       className="btn btn-yellow btn-sm"
-                       onClick={() => onOpenQuote(vid.title)}
-                       style={{ width: '100%', justifyContent: 'center' }}
-                     >
-                       Enquire for Bulk Supply
-                     </button>
-                   </div>
-                 </div>
-               </div>
-             ))}
-           </div>
-
-           {/* Quick Consultation Row */}
-           <div style={{ marginTop: '3.5rem', padding: '1.5rem 2rem', background: 'rgba(255, 255, 255, 0.04)', borderRadius: '16px', border: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
-             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-               <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'rgba(251, 191, 36, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#FBBF24', flexShrink: 0 }}>
-                 <CheckCircle2 size={24} />
-               </div>
-               <div>
-                 <div style={{ color: '#F8FAFC', fontWeight: 700, fontSize: '1.05rem' }}>Custom Sizing &amp; Bulk Orders Welcome</div>
-                 <div style={{ color: '#94A3B8', fontSize: '0.875rem' }}>Visit our Greater Noida facility or request custom machine-slit roll samples.</div>
+             <div className="video-card-clean">
+               <div className="video-player-wrapper">
+                 <video
+                   controls
+                   preload="metadata"
+                   playsInline
+                   className="factory-video-element"
+                 >
+                   <source src="/videos/video1.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
                </div>
              </div>
-             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-               <a
-                 href={`https://wa.me/${COMPANY_INFO.whatsappRaw}?text=${encodeURIComponent("Hello Saroj Packaging, I watched your manufacturing videos and want to discuss a bulk requirement.")}`}
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="btn btn-whatsapp btn-sm"
-               >
-                 <MessageSquare size={16} />
-                 <span>WhatsApp Video Enquiry</span>
-               </a>
-               <button
-                 className="btn btn-pill-outline btn-sm"
-                 onClick={() => handleNav('contact')}
-                 style={{ color: '#F8FAFC', borderColor: 'rgba(255, 255, 255, 0.2)' }}
-               >
-                 Visit Our Facility
-               </button>
+
+             <div className="video-card-clean">
+               <div className="video-player-wrapper">
+                 <video
+                   controls
+                   preload="metadata"
+                   playsInline
+                   className="factory-video-element"
+                 >
+                   <source src="/videos/video2.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
+               </div>
+             </div>
+
+             <div className="video-card-clean">
+               <div className="video-player-wrapper">
+                 <video
+                   controls
+                   preload="metadata"
+                   playsInline
+                   className="factory-video-element"
+                 >
+                   <source src="/videos/video3.mp4" type="video/mp4" />
+                   Your browser does not support the video tag.
+                 </video>
+               </div>
              </div>
            </div>
          </div>
